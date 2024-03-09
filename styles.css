@@ -38,20 +38,25 @@ body {
   background-color: black;
 }
 
+.spacer_firstHeader {
+    width: 440px;
+}
+
 .studia{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 680px;
     margin-bottom: 100px;
+}
+
+.spacer_header {
+    width: 200px;
 }
 
 .menu-desplegable {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 400px;
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 1000;
     /*background-color: #f8f9fc;*/ /*LIGHT MODE*/
@@ -232,22 +237,21 @@ body {
 
 footer {
     background-color: #1d1d1f;
-    margin-bottom: -40px;
+    height: 0px;
 }
 
 .footer_refs {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-left: 400px;
-    margin-bottom: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 1000;
     /*background-color: #f8f9fc;*/ /*LIGHT MODE*/
     background-color: #1d1d1f;
     font-size: 15px;
-    padding-left: 12%;
 }
 
 .footer_refs a {
@@ -271,7 +275,7 @@ footer {
     /*padding-top: 186px;*/
     color: #a1a1a6;
     padding-right: 60px;
-    padding: 14px;
+    padding-top: 4px;
 }
 
 
@@ -388,4 +392,26 @@ footer {
     header, .que_somos, .party, .desktop-message, .video_row, .footer_refs, .appstore_logo {
       display: none;
   }
-} 
+}
+
+@media (max-width: 1260px) {
+    .video_row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 2600px) {
+    .footer_refs {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1260px) {
+    .menu_desplegable {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+
+    }
+}
