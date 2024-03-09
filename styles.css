@@ -170,14 +170,20 @@ body {
 }
 
 .video_row1 {
-
+    display: flex;
+    justify-content: center;
 }
 
 .video_row2 {
-
+    display: flex;
+    justify-content: center;
 }
 
 .spacer_videos {
+    width: 11px;
+}
+
+.spacer_btw_videos {
     width: 11px;
 }
 
