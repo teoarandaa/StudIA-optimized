@@ -1,0 +1,275 @@
+header{
+    /*background-color:#f8f9fc;*/ /*LIGHT MODE*/
+    background-color: #1d1d1f;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;*/ /*APPLE FONT*/
+    font-weight: 1000;
+    font-size: 50px;
+    color: #a1a1a6;
+    /*color: white;*/ /*LIGHT MODE*/
+}
+
+.h1_Stud {
+    margin-top: 40px;
+}
+
+.h1_IA {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
+    padding-top: 40px;
+}
+
+body {
+  /*background-color: white;*/ /*LIGHT MODE*/
+  background-color: black;
+}
+
+.studia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 680px;
+    margin-bottom: 100px;
+}
+
+.menu-desplegable {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    /*background-color: #f8f9fc;*/ /*LIGHT MODE*/
+    background-color: #1d1d1f;
+    font-size: 20px;
+    padding-top: 40px;
+}
+  
+.menu-desplegable a {
+    text-decoration: none;
+    /*color:black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+    padding: 10px;
+    border-bottom: 1px;
+}
+  
+.menu-desplegable a:hover {
+    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
+}
+
+.que_somos {
+    width: 100%; 
+    margin-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.que_somos p {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+.title_que_somos {
+    margin-left: 10px;
+    background: radial-gradient(#eff1ff,black 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 120%;
+    font-size: 60px;
+}
+
+.spacer {
+    height: 70px;
+}
+
+.body_que_somos1 {
+    /*color: black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+}
+  
+  .body_que_somos1_1 {
+    /*color: black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+}
+  
+  /*PACK 2*/
+  .body_que_somos2 {
+    /*color: black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+}
+  
+  .body_que_somos2_1 {
+    /*color: black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+}
+  
+  /*PACK 3*/
+  .body_que_somos3 {
+    /*color: black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+}
+  
+  /*PACK 4*/
+  .body_que_somos4 {
+    /*color: black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+}
+  
+  .body_que_somos4_1 {
+    /*color: black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+}
+  /*FIN PACK 4*/
+
+  .remarkables {
+    padding-bottom: 30px;
+    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
+}
+
+.video_row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+  }
+
+
+
+
+
+/* Adjustments for mobile devices and apology message */
+.mobile-message {
+    display: none;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    background-color: black;
+    flex-direction: column; /* Align children in a column */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h1_mobile {
+  display: none;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: white;
+  text-align: justify;
+  background-color: black;
+  flex-direction: column; /* Align children in a column */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Adjustments for desktop devices and apology message */
+.desktop-message {
+    display: none;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    background-color: white;
+    flex-direction: column; /* Align children in a column */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h1_desktop {
+  display: none;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: black;
+  text-align: justify;
+  background-color: white;
+  flex-direction: column; /* Align children in a column */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+      background-position: 100% 50%;
+    }
+}
+
+@keyframes radial-gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 50% 100%;
+  }
+}
+
+/*Media Query for screens smaller than 1024px (Both Landscape and Portrait) */
+@media only screen and (max-width: 780px) {
+    /* Hide main content and display desktop message */
+    header, .que_somos, .party, .desktop-message, .video_row, .footer_refs, .appstore_logo {
+        display: none;
+    }
+
+    .desktop-message {
+        display: flex; /* Show desktop message */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Media Query specifically for Mobile Devices */
+@media only screen and (max-width: 780px) and (orientation: portrait) {
+    .mobile-message {
+        display: flex; /* Show mobile message */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Hide all other content */
+    header, .contenedor, .party, .desktop-message, .video_row, .footer_refs {
+      display: none;
+  }
+} 
