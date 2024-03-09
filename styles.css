@@ -78,7 +78,7 @@ body {
 
 .que_somos {
     width: 100%; 
-    margin-top: 40px;
+    margin-top: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -89,19 +89,30 @@ body {
     display: inline-block;
     margin: 0;
     text-align: center;
+    margin-top: -200px;
 }
 
 .title_que_somos {
-    margin-left: 10px;
     background: radial-gradient(#eff1ff,black 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 100% 120%;
     font-size: 60px;
+
+    /*ANIMACION APARICION TEXTO*/
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease, transform 3s ease;
+    height: 100px; /* Altura suficiente para permitir el desplazamiento */
+}
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .spacer {
-    height: 70px;
+    height: 10px;
 }
 
 .body_que_somos1 {
@@ -109,41 +120,41 @@ body {
     color: #a1a1a6;
 }
   
-  .body_que_somos1_1 {
+.body_que_somos1_1 {
     /*color: black;*/ /*LIGHT MODE*/
     color: #a1a1a6;
 }
   
   /*PACK 2*/
-  .body_que_somos2 {
+.body_que_somos2 {
     /*color: black;*/ /*LIGHT MODE*/
     color: #a1a1a6;
 }
-  
-  .body_que_somos2_1 {
+
+.body_que_somos2_1 {
     /*color: black;*/ /*LIGHT MODE*/
     color: #a1a1a6;
 }
   
   /*PACK 3*/
-  .body_que_somos3 {
+.body_que_somos3 {
     /*color: black;*/ /*LIGHT MODE*/
     color: #a1a1a6;
 }
   
   /*PACK 4*/
-  .body_que_somos4 {
+.body_que_somos4 {
     /*color: black;*/ /*LIGHT MODE*/
     color: #a1a1a6;
 }
   
-  .body_que_somos4_1 {
+.body_que_somos4_1 {
     /*color: black;*/ /*LIGHT MODE*/
     color: #a1a1a6;
 }
   /*FIN PACK 4*/
 
-  .remarkables {
+.remarkables {
     padding-bottom: 30px;
     background: linear-gradient(45deg, #0080FF, #00FF6F);
     -webkit-background-clip: text;
@@ -154,9 +165,108 @@ body {
 
 .video_row {
     display: flex;
-    justify-content: space-around;
     margin-top: 120px;
-  }
+    justify-content: center;
+}
+
+.video_row1 {
+
+}
+
+.video_row2 {
+
+}
+
+.spacer_videos {
+    width: 11px;
+}
+
+.party{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 40px;
+    /*background-color: white;*/ /*LIGHT MODE*/
+    background-color: black;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    width: 100%;
+}
+
+.partytext {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 100px;
+  background: linear-gradient(45deg, #0080FF, #00FF6F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientAnimation 4s infinite alternate;
+  transition: top 0.3s;
+
+  /*ANIMACION APARICION TEXTO AL HACER SCROLL*/
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 2s ease;
+  height: 500px; /* Altura suficiente para permitir el desplazamiento */
+}
+
+.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.appstore_logo {
+    display: flex;
+    width: 8%;
+    height: 8%;
+    padding-left: 45%;
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: #1d1d1f;
+    margin-bottom: -40px;
+}
+
+.footer_refs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 400px;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    /*background-color: #f8f9fc;*/ /*LIGHT MODE*/
+    background-color: #1d1d1f;
+    font-size: 15px;
+    padding-left: 12%;
+}
+
+.footer_refs a {
+    text-decoration: none;
+    /*color:black;*/ /*LIGHT MODE*/
+    color: #a1a1a6;
+    padding: 10px;
+    border-bottom: 1px;
+    padding-top: 14px;
+}
+
+.footer_refs a:hover {
+    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
+}
+
+.copyright {
+    /*padding-top: 186px;*/
+    color: #a1a1a6;
+    padding-right: 60px;
+    padding: 14px;
+}
 
 
 
@@ -220,7 +330,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-  @keyframes gradientAnimation {
+@keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
     }
@@ -269,7 +379,7 @@ body {
     }
 
     /* Hide all other content */
-    header, .contenedor, .party, .desktop-message, .video_row, .footer_refs {
+    header, .que_somos, .party, .desktop-message, .video_row, .footer_refs, .appstore_logo {
       display: none;
   }
 } 

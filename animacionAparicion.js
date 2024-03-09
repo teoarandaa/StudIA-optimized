@@ -32,4 +32,3 @@ function mostrarElemento() {
       elemento.classList.remove('mostrar');
     }
 }
-  
