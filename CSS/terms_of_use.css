@@ -69,6 +69,10 @@ h1{
     width: 150px;
 }
 
+.spacer_btw_header_content {
+    height: 60px;
+}
+
 body {
     /*background-color: white;*/ /*LIGHT MODE*/
     background-color: black;
@@ -88,11 +92,27 @@ body {
 }
 
 .spacer_content {
-    height: 60px;
+    height: 30px;
 }
 
 .superspacer {
     height: 271px;
+}
+
+.support_gmail {
+    font-size: 20px;
+    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
+    text-decoration: none;
+    padding-left: 30%;
+}
+
+.update_date {
+    font-size: 15px;
+    padding-left: 30%;
 }
 
 footer {
