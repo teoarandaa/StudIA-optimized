@@ -82,6 +82,39 @@ body {
     color: #a1a1a6;
 }
 
+.contenedor_news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preview_news {
+    border-radius: 15px;
+    border-style: none;
+}
+
+.spacer_in_preview_news {
+    height: 20px;
+}
+
+.h1_preview_news {
+    font-size: 30px;
+    font-weight: 600;
+
+    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s infinite alternate;
+}
+
+.spacer_preview_news {
+    height: 40px;
+}
+
+
+
 
 
 .superspacer {
