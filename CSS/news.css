@@ -258,7 +258,7 @@ footer {
 /*Media Query for screens smaller than 840px (Both Landscape and Portrait) */
 @media only screen and (max-width: 840px) {
     /* Hide main content and display desktop message */
-    header, .content {
+    header, .contenedor_news, footer {
         display: none;
     }
 
@@ -282,7 +282,7 @@ footer {
     }
 
     /* Hide all other content */
-    header, .content {
+    header, .contenedor_news, footer {
       display: none;
   }
 }

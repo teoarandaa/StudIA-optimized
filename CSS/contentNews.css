@@ -84,6 +84,11 @@ body {
     align-items: center;    
 }
 
+.empty {
+    background-color: black;
+    color: #a1a1a6;
+}
+
 .spacer {
     height: 30px;
 }
@@ -211,7 +216,7 @@ footer {
 /*Media Query for screens smaller than 840px (Both Landscape and Portrait) */
 @media only screen and (max-width: 840px) {
     /* Hide main content and display desktop message */
-    header, .content {
+    header, .empty {
         display: none;
     }
 
@@ -235,7 +240,7 @@ footer {
     }
 
     /* Hide all other content */
-    header, .content {
+    header, .empty {
       display: none;
   }
 }
