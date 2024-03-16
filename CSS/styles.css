@@ -286,7 +286,7 @@ footer {
     padding-right: 60px;
     padding-top: 4px;
 }
-
+ 
 
 @keyframes gradientAnimation {
     0% {
@@ -310,39 +310,7 @@ footer {
   }
 }
 
-/*Media Query for screens smaller than 1024px (Both Landscape and Portrait) */
-/*@media only screen and (max-width: 40px) {*/
-    /* Hide main content and display desktop message */
-    /*header, .que_somos, .party, .desktop-message, .video_row, .footer_refs, .appstore_logo {
-        display: none;
-    }
-
-    .desktop-message {
-        display: flex;*/ /* Show desktop message */
-        /*flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-}*/
-
-/* Media Query specifically for Mobile Devices */
-/*@media only screen and (max-width: 40px) and (orientation: portrait) {
-    .mobile-message {
-        display: flex;*/ /* Show mobile message */
-        /*flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }*/
-
-    /* Hide all other content */
-    /*header, .que_somos, .party, .desktop-message, .video_row, .footer_refs, .appstore_logo {
-      display: none;
-  }
-}*/
-
-@media (max-width: 1260px) {
+/*@media (max-width: 1260px) {
     .video_row {
         flex-direction: column;
         align-items: center;
@@ -362,4 +330,83 @@ footer {
         margin-left: 0;
 
     }
-}
+}*/
+
+@media (max-width: 768px) {
+    /* General adjustments for smaller screens */
+  
+    header {
+      height: auto; /* Adjust header height for better layout */
+      margin: 0; /* Remove negative margins */
+    }
+  
+    .h1_Stud {
+      font-size: 40px; /* Reduce heading sizes */
+      padding-top: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .h1_IA {
+        font-size: 40px; /* Reduce heading sizes */
+      padding-top: 60px; /* Adjust padding for smaller screens */
+    }
+  
+    .que_somos {
+      font-size: 15px; /* Reduce font size for title */
+      margin-top: 50px; /* Adjust margin for better flow */
+    }
+  
+    .que_somos p {
+      margin-top: -80px; /* Adjust paragraph position */
+    }
+  
+    .title_que_somos {
+      font-size: 25px; /* Reduce title font size */
+      height: 50px; /* Adjust height for animation */
+    }
+  
+    .party {
+      font-size: 30px; /* Reduce party text size */
+      padding-top: -480px;
+    }
+  
+    .partytext {
+      font-size: 45px; /* Reduce partytext font size */
+      height: 240px; /* Adjust height for animation */
+    }
+
+    .br_spacer {
+        display: none;
+    }
+  
+    /* Adjust layouts for flexbox elements (if needed) */
+    .studia, 
+    .video_row, 
+    .video_row1, 
+    .video_row2 {
+      flex-wrap: wrap; /* Wrap elements on smaller screens */
+    }
+  
+    /* Adjust paddings and margins for better spacing */
+    .spacer_firstHeader, 
+    .spacer_header, 
+    .spacer_videos, 
+    .spacer_btw_videos {
+      display: none; /* Hide unnecessary spacers on mobile */
+    }  
+  }
+
+  /* Adjust menu on mobile (optional) */
+@media (max-width: 768px) {
+    .menu-desplegable {
+      flex-direction: row; /* Stack menu items vertically */
+      padding-left: 15px;
+    }
+  }
+  
+  /* Adjust footer on mobile (optional) */
+  @media (max-width: 768px) {
+    .footer_refs {
+      font-size: 12px; /* Reduce font size for better readability */
+    }
+  }
+  
