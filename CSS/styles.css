@@ -399,7 +399,7 @@ footer {
 @media (max-width: 768px) {
     .menu-desplegable {
       flex-direction: row; /* Stack menu items vertically */
-      padding-left: 15px;
+      padding-left: 29px;
     }
   }
   
