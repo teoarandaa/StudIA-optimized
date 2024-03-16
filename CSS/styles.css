@@ -376,7 +376,7 @@ footer {
 }
 
 /*Media Query for screens smaller than 1024px (Both Landscape and Portrait) */
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 240px) {
     /* Hide main content and display desktop message */
     header, .que_somos, .party, .desktop-message, .video_row, .footer_refs, .appstore_logo {
         display: none;
@@ -392,7 +392,7 @@ footer {
 }
 
 /* Media Query specifically for Mobile Devices */
-@media only screen and (max-width: 440px) and (orientation: portrait) {
+@media only screen and (max-width: 240px) and (orientation: portrait) {
     .mobile-message {
         display: flex; /* Show mobile message */
         flex-direction: column;
