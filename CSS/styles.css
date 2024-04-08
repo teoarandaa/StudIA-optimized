@@ -291,21 +291,7 @@ footer {
 
 
 
-/* Adjustments for mobile devices and apology message */
-.mobile-message {
-    display: none;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 1.2em;
-    color: white;
-    text-align: justify;
-    background-color: black;
-    flex-direction: column; /* Align children in a column */
-    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
-    font-family: "Gill Sans", "Arial", "Helvetica Neue", sans-serif;
-}
+
 
 .h1_mobile {
   display: none;
@@ -320,22 +306,6 @@ footer {
   flex-direction: column; /* Align children in a column */
   /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
   font-family: "Gill Sans", "Arial", "Helvetica Neue", sans-serif;
-}
-
-/* Adjustments for desktop devices and apology message */
-.desktop-message {
-    display: none;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 1.2em;
-    color: white;
-    text-align: justify;
-    background-color: black;
-    flex-direction: column; /* Align children in a column *//*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
-    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
-    font-family: "Gill Sans", "Arial", "Helvetica Neue", sans-serif;
 }
 
 .h1_desktop {
@@ -375,38 +345,6 @@ footer {
   }
 }
 
-/*Media Query for screens smaller than 1024px (Both Landscape and Portrait) */
-@media only screen and (max-width: 840px) {
-    /* Hide main content and display desktop message */
-    header, .que_somos, .party, .desktop-message, .video_row, .footer_refs, .appstore_logo {
-        display: none;
-    }
-
-    .desktop-message {
-        display: flex; /* Show desktop message */
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-/* Media Query specifically for Mobile Devices */
-@media only screen and (max-width: 840px) and (orientation: portrait) {
-    .mobile-message {
-        display: flex; /* Show mobile message */
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    /* Hide all other content */
-    header, .que_somos, .party, .desktop-message, .video_row, .footer_refs, .appstore_logo {
-      display: none;
-  }
-}
-
 @media (max-width: 1260px) {
     .video_row {
         flex-direction: column;
@@ -422,9 +360,12 @@ footer {
 
 @media (max-width: 1260px) {
     .menu_desplegable {
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin-left: 0;
 
     }
 }
+
+@media
