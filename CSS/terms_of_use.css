@@ -54,7 +54,7 @@ h1{
 }
   
 .menu-desplegable a:hover {
-    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    background: linear-gradient(45deg, #cee4ff, #006eff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
@@ -101,7 +101,7 @@ body {
 
 .support_gmail {
     font-size: 20px;
-    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    background: linear-gradient(45deg, #cee4ff, #006eff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
@@ -145,7 +145,7 @@ footer {
 }
 
 .footer_refs a:hover {
-    background: linear-gradient(45deg, #0080FF, #00FF6F);
+    background: linear-gradient(45deg, #cee4ff, #006eff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
